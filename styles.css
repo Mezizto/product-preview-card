@@ -37,6 +37,7 @@ picture {
     font-family: "Montserrat", sans-serif;
     font-size: 10px;
     letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 h1 {
