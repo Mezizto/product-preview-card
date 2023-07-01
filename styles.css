@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 300px;
+    height: 552px;    
+}
+
+.image {
+    display: flex;
+    background-image: url("./images/image-product-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 225px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.product-description {
+    display: inline-flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px 25px 30px 25px;
+    background-color: hsl(0, 0%, 100%); 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#perfume {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    letter-spacing: 5px;
+}
+
+h1 {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: hsl(212, 21%, 14%);
+    margin: 0 0;
+}
+
+p {
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+#discount {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+#price {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: line-through;
+    font-size: 10px;
+    color: hsl(228, 12%, 48%);  
+      
+}
+
+button {
+    display: inline-flex;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+}
+
+#shopping-cart {
+    padding-right: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(157, 36%, 24%);
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .container {
+        flex-direction: row;
+        width: 490px;
+        height: 350px;
+    }
+
+    .image {
+        background-image: url("./images/image-product-desktop.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .product-description {
+        box-sizing: border-box;
+        width: 50%;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+    }
+}
