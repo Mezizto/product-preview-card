@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <style>
+    .attribution {display: none;}
+  </style>
+  
+  <title>Product preview card component</title>
+
+</head>
+<body>
+  <main class="container">
+    <picture>
+      <source media="(min-width: 37.5em)" srcset="./images/image-product-desktop.jpg" width="245px">
+      <img src="images/image-product-mobile.jpg" alt="Mobile Image" width="100%">
+    </picture>
+    <header class="product-description">
+      <p class="perfume">PERFUME</p>
+
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+      Perfumer-Creator for the House of CHANEL.</p>
+    
+      <div class="pricing">
+        <div class="discount">$149.99
+        </div>  
+        <div class="price">$169.99
+        </div>
+      </div>
+      <button><img class="shopping-cart" src="images/icon-cart.svg" alt="shopping cart">Add to Cart</button>
+    </header>
+  </main>
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mezizto</a>.
+  </div>
+</footer>
+</body>
+</html>
